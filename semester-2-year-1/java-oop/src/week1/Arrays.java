@@ -46,23 +46,52 @@ public class Arrays {
 //            System.out.println(fruit);
 //        }
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        ArrayList<String> foods = new ArrayList<>();
+//
+//        System.out.print("Enter the number of food items: ");
+//        int numOfFood = scanner.nextInt();
+//        scanner.nextLine();
+//
+//        for(int i = 1; i <= numOfFood; i++){
+//            System.out.print("Enter food item #" + i + ": ");
+//            String food =  scanner.nextLine();
+//            foods.add(food);
+//        }
+//
+//        Collections.sort(foods);
+//        System.out.println(foods);
+//
+//        scanner.close();
 
-        ArrayList<String> foods = new ArrayList<>();
+        // 2D Array = An array where each element is an array
 
-        System.out.print("Enter the number of food items: ");
-        int numOfFood = scanner.nextInt();
-        scanner.nextLine();
+//        String[] fruits = {"apple", "orange", "banana"};
+//        String[] vegetables = {"potato", "onion", "carrot"};
+//        String[] meats = {"chicken", "pork", "beef", "fish"};
+//
+//        String[][] groceries = {fruits, vegetables, meats};
+//
+//        groceries[0][0] = "pineapple";
+//
+//        for(String[] foods : groceries){
+//            for(String food : foods){
+//                System.out.print(food + " ");
+//            }
+//            System.out.println();
+//        }
 
-        for(int i = 1; i <= numOfFood; i++){
-            System.out.print("Enter food item #" + i + ": ");
-            String food =  scanner.nextLine();
-            foods.add(food);
+        char[][] telephone =  {{'1', '2', '3'},
+                               {'4', '5', '6'},
+                               {'7', '8', '9'},
+                               {'*', '0', '#'}};
+
+        for(char[] row : telephone){
+            for(char number : row){
+                System.out.print(number + " ");
+            }
+            System.out.println();
         }
-
-        Collections.sort(foods);
-        System.out.println(foods);
-
-        scanner.close();
     }
 }
