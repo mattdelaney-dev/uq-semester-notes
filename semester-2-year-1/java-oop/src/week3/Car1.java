@@ -6,11 +6,13 @@ public class Car1 {
     String color;
     Engine engine;
 
-    Car1(String model, int year, String make, String color) {
+    Car1(String model, String color) {
         this.model = model;
-        this.year = year;
-        this.make = make;
         this.color = color;
+    }
+
+    void drive(){
+        System.out.println("Driving" + this.model + " ");
     }
 
     void start(){
