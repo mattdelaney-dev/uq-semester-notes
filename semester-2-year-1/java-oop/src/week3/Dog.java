@@ -1,9 +1,11 @@
 public class Dog extends Animal{
 
-    int lives = 1;
+//    int lives = 1;
+//
+//    void speak() {
+//        System.out.println("BARK");
+//    }
 
-    void speak() {
-        System.out.println("BARK");
-    }
+
 
 }

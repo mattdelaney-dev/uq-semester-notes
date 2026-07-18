@@ -1,7 +1,7 @@
-public class Animal extends Organism{
+public class Animal {
 
 
-    void eat() {
-        System.out.println("Animal is eating");
+    void move(){
+        System.out.println("Animal is running");
     }
 }
